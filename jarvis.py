@@ -19,8 +19,8 @@ webbrowser.register('chrome',None,webbrowser.BackgroundBrowser("C:\\Program File
 
 # Creating dictionary for mail.
 email_dictionary={
-    "neel":"neelpinishketki@gmail.com",
-    "champaneria":"neelpinishketki@gmail.com"
+    "neel":"email address",
+    "champaneria":"email address"
 }
 
 def speak(audio):
@@ -69,8 +69,8 @@ def sendEmail(to,content):
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.ehlo()
     server.starttls()
-    server.login("neelpinishketki@gmail.com","09111999")
-    server.sendmail("neelpinishketki@gmail.com",to,content)
+    server.login("sender email","password")
+    server.sendmail("receiver email",to,content)
     server.close()
 
 if __name__ == "__main__":
